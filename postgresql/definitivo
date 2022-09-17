@@ -1,0 +1,18 @@
+DROP TABLE Produtos CASCADE;
+DROP TABLE Pedidos CASCADE;
+
+CREATE TABLE Produtos(
+nome VARCHAR(45) NOT NULL,
+preco FLOAT NOT NULL,
+id_produto SERIAL,
+CONSTRAINT pk_Produtos_id_produto PRIMARY KEY(id_produto)
+);
+
+CREATE TABLE Pedidos(
+quantidade SMALLINT NOT NULL,
+id_pedido SERIAL,
+id_produto SERIAL,
+CONSTRAINT pk_Pedidos_id_pedido PRIMARY KEY(id_pedido),
+CONSTRAINT fk_Pedidos_Produtos FOREIGN KEY(id_pedido)
+	REFERENCES Produtos(id_produto)
+);

@@ -1,0 +1,16 @@
+{
+  "sqltools.connections": [
+    {
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 5433,
+      "driver": "PostgreSQL",
+      "name": "localhost",
+      "database": "ecommerce",
+      "username": "postgres",
+      "password": "postgres",
+      "group": "Servers",
+      "connectionTimeout": 100
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{ 
+  "env":{
+    "MYSQL_USER": "postgres",
+    "MYSQL_PASSWORD": "postgres",
+    "MYSQL_DATABASE": "ecommerce",
+    "MYSQL_HOST": "localhost",
+    "MYSQL_PORT": 5433
+  }
+}
